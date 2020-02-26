@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment2">
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.praassesment1.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_persegiPanjang"
+            app:destination="@id/persegiPanjang" />
+        <action
+            android:id="@+id/action_mainFragment2_to_segitiga"
+            app:destination="@id/segitiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/persegiPanjang"
+        android:name="com.example.praassesment1.PersegiPanjang"
+        android:label="fragment_persegi_panjang"
+        tools:layout="@layout/fragment_persegi_panjang" />
+    <fragment
+        android:id="@+id/segitiga"
+        android:name="com.example.praassesment1.Segitiga"
+        android:label="fragment_segitiga"
+        tools:layout="@layout/fragment_segitiga" />
+</navigation>
